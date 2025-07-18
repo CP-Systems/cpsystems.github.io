@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | AquaSense by CP Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background-color: #f4f7f9; color: #222; }
+    header {
+      background-color: #00324e;
+      padding: 20px 40px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img { height: 40px; }
+    .logo span { font-size: 1.5rem; font-weight: bold; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: #005f85;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #005f85;
+    }
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+    }
+    .stat {
+      flex: 1 1 200px;
+      background: #eaf4f7;
+      padding: 30px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .stat h3 { font-size: 2rem; color: #00324e; }
+    .stat p { margin-top: 10px; color: #555; }
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+    .info img {
+      max-width: 100%;
+      border-radius: 10px;
+      flex: 1 1 400px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .info-text {
+      flex: 2;
+    }
+    .full-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    footer {
+      background: #00324e;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    footer p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://i.imgur.com/V2kqM7R.png" alt="AquaSense Logo">
+      <span>CP Systems</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Platform</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>About Us</h1>
+    <p>Discover our inspiring journey and mission to revolutionize water management and leak detection in Africa through IoT innovation.</p>
+  </section>
+
+  <section class="section">
+    <div class="info">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Wireless_mesh_network_diagram.svg" alt="Wireless Network">
+      <div class="info-text">
+        <h2>Our Mission</h2>
+        <p>CP Systems is committed to building scalable, sensor-based water monitoring platforms for African communities. With our AquaSense solution, we enable utilities to detect leaks, monitor flow, and improve water delivery using affordable technology and real-time dashboards.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="stats">
+      <div class="stat">
+        <h3>30+</h3>
+        <p>Sensor Nodes Deployed</p>
+      </div>
+      <div class="stat">
+        <h3>5</h3>
+        <p>Clusters Monitored</p>
+      </div>
+      <div class="stat">
+        <h3>99%</h3>
+        <p>Packet Reliability</p>
+      </div>
+      <div class="stat">
+        <h3>6 mo+</h3>
+        <p>Battery Life per Node</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Our Technology</h2>
+    <p>We combine edge processing, NRF24/LoRa radios, solar-powered nodes, GSM gateways, and cloud databases like InfluxDB to deliver real-time insights into water flow, anomalies, and leakages.</p>
+    <img class="full-img" src="https://sensornetworksinc.com/wp-content/uploads/2022/11/smartPIMS-2.0-Front-Page-Slider-Image-transparent.png" alt="Sensor Technology">
+  </section>
+
+  <section class="section">
+    <h2>Where We Work</h2>
+    <div class="info">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kigali_City_Center_-_Panoramic.jpg/1024px-Kigali_City_Center_-_Panoramic.jpg" alt="Kigali">
+      <div class="info-text">
+        <p>We are proudly based in Kigali, Rwanda, and actively deploy smart water infrastructure in collaboration with WASAC and international research partners.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CP Systems. AquaSense Water Intelligence.</p>
+    <p>Contact: info@cpsystems.org | Kigali Innovation City, Rwanda</p>
+  </footer>
+</body>
+</html>
